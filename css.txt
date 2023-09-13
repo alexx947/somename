@@ -1,0 +1,179 @@
+
+.wrapper2 {
+    width: 100%;
+    
+    border: 1px solid rgb(0, 255, 13);
+    border-collapse: collapse;
+}
+.navlist {
+    min-height: 50px;
+    max-height: 100%;
+    width: 90%;
+    background-color: rgb(49, 41, 40);
+    opacity: 0.95;
+    padding-top: 20px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+}
+.navlist ul {
+    padding: 0;
+	width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navlist ul li a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px 0px 10px;
+}
+.navlist ul li a:hover {
+    color: rgb(244, 227, 76);
+}
+li {
+    display: inline;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+<li class="active"><a href="#" class="active">TExterior & Garden</a>
+                                    <ul>
+                                        <li><a href="#">Sub one</a></li>
+                                        <li><a href="#">Sub two</a></li>
+                                        <li><a href="#">Sub three</a></li>
+                                        <li><a href="#">Sub four</a></li>
+                                        <li><a href="#">Sub five is a long link that wraps</a></li>
+                                    </ul>
+                                </li>
+
+
+
+
+ .navlist > ul > li a {
+    display:block;
+    margin:0;
+    padding:.6em .5em .4em;
+    font-size:1em;
+    line-height:1em;
+    background:#ddd;
+    text-decoration:none;
+    color:#444;
+    font-weight:bold;
+    border-bottom:1px solid #000;
+ }
+ .navlist > ul > li.active a {
+    color:#fff;
+    background:#000;
+ }
+ .navlist > ul > li a:hover {
+    background:#36f; /* Top menu items background colour */
+    color:#fff;
+    border-bottom:1px solid #03f;
+ }
+ .navlist > ul > li:hover a { /* This line is required for IE 6 and below */
+    background:#36f; /* Top menu items background colour */
+    color:#fff;
+    border-bottom:1px solid #03f;
+ }
+ 
+ /* Submenu items */
+ .navlist ul ul {
+    display:none; /* Sub menus are hidden by default */
+    position:absolute;
+    top:2em;
+    left:0;
+    width:10em; /* width of the drop-down menus */
+ }
+ .navlist ul ul li {
+    clear:left;
+    width:100%;
+ }
+ .navlist ul ul li a,
+ .navlist ul li.active li a,
+ .navlist ul li:hover ul li a { /* This line is required for IE 6 and below */
+    font-size:.8em;
+    font-weight:normal; /* resets the bold set for the top level menu items */
+    background:#eee;
+    color:#444;
+    line-height:1.4em; /* overwrite line-height value from top menu */
+    border-bottom:1px solid #ddd; /* sub menu item horizontal lines */
+ }
+  .navlist ul ul li a:hover,
+  .navlist ul li.active ul li a:hover,
+  .navlist ul li:hover ul li a:hover { /* This line is required for IE 6 and below */
+    background:#36f; /* Sub menu items background colour */
+    color:#fff;
+ }
+ 
+ /* Flip the last submenu so it stays within the page */
+ .navlist ul li:last-child ul {
+    left:auto; /* reset left:0; value */
+    right:0; /* Set right value instead */
+ }
+ 
+ /* Make the sub menus appear on hover */
+  .navlist ul li:hover ul { /* This line is required for IE 6 and below */
+    display:block; /* Show the sub menus */
+ }
+
+
+
+
+
+column-gap: 12.5px;
+    column-gap: 9px;
+
+
+
+
+
+
+@media (max-width: 760px) {
+    header {
+        background-color: rgb(97, 77, 73);
+        width: 100%;
+        margin: 0 auto;
+        min-height: 100px;
+        height: auto;
+    }
+    .wrapper, .map-bg {
+        width: 100%;
+    }
+    .map-bgimg {
+        position: absolute;
+        opacity: 0.40;
+        width: 100%;
+        filter: invert(1);
+        z-index: 0;
+        object-fit: cover;
+    }
+
+    .homelist {
+        display: inline;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .homelist ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: relative;
+        width: 70%;
+        height: 20px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 900px) {
+}
+
+@media (min-width: 1180px) {
+}
